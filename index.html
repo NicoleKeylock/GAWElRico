@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>El Rico Gran Familia — Market Opportunity</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
 :root{
@@ -18,7 +18,7 @@
   --stripe-o:#8B1A1A; --stripe-y:#C0392B; --stripe-d:#2C0A0A;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--cream);font-family:'Nunito',sans-serif;color:var(--dark);overflow-x:hidden;line-height:1.5}
+body{background:var(--cream);font-family:'Manrope',sans-serif;color:var(--dark);overflow-x:hidden;line-height:1.5}
 
 /* HEADER */
 header{
@@ -34,21 +34,16 @@ header{
 .hdr-meta{font-size:9px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35)}
 
 /* HERO: logo left | bottle overlapping right | insights far right */
-.hero{
-  display:grid;
-  grid-template-columns:1fr 300px;
-  min-height:140px;
+.hero{display:grid;grid-template-columns:1fr 300px;min-height:200px;
   padding:0 48px;
   overflow:visible;
   position:relative;
 }
-.hero-left{
-  padding:28px 24px 28px 0;
+.hero-left{padding:22px 24px 30px 0;
   display:flex;flex-direction:column;justify-content:center;
   z-index:2;
 }
-.logo-img{
-  height:160px;object-fit:contain;object-position:left center;
+.logo-img{height:245px;object-fit:contain;object-position:left center;
   display:block;margin-bottom:12px;
   /* logo has transparent bg, sits naturally on dark header */
 }
@@ -73,16 +68,14 @@ header{
 }
 
 /* INSIGHTS */
-.hero-insights{
-  border-left:1px solid rgba(244,134,42,0.2);
-  padding:24px 0 24px 28px;
+.hero-insights{border-left:1px solid rgba(244,134,42,0.2);padding:28px 0 28px 36px;
   display:flex;flex-direction:column;justify-content:center;gap:12px;
 }
 .ins{display:flex;gap:9px;align-items:flex-start;}
 .ins-dot{width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:4px;}
 .ins-dot.r{background:#E07070;}
-.ins-txt{font-size:11px;font-weight:600;color:rgba(255,255,255,0.65);line-height:1.45;}
-.ins-txt strong{color:var(--orange2);font-weight:800;}
+.ins-txt{font-size:13px;font-weight:600;color:rgba(255,255,255,0.78);line-height:1.6;}
+.ins-txt strong{color:var(--orange2);font-weight:900;letter-spacing:0.01em;}
 
 /* STRIPE */
 .stripe{
@@ -96,13 +89,13 @@ header{
 }
 
 /* MAIN */
-main{padding:44px 48px 60px;max-width:1400px;margin:0 auto;}
+main{padding:58px 48px 70px;max-width:1400px;margin:0 auto;}
 
 /* SECTION */
 .sec{display:flex;align-items:center;gap:12px;margin:44px 0 18px;padding-bottom:10px;border-bottom:2px solid var(--border);}
 .sec:first-child{margin-top:0;}
 .sec-dot{width:12px;height:12px;border-radius:50%;background:var(--orange);flex-shrink:0;}
-.sec-title{font-size:20px;font-weight:900;letter-spacing:-0.01em;}
+.sec-title{font-size:24px;font-weight:700;letter-spacing:-0.01em;}
 .sec-sub{margin-left:auto;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:0.12em;color:var(--mid);}
 
 /* KPIs */
@@ -116,7 +109,7 @@ main{padding:44px 48px 60px;max-width:1400px;margin:0 auto;}
 .kpi::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;border-radius:0 0 14px 14px;background:var(--orange);}
 .kpi.r::after{background:var(--red);} .kpi.g::after{background:var(--green);}
 .kpi-lbl{font-size:8px;text-transform:uppercase;letter-spacing:0.16em;color:var(--mid);font-weight:800;margin-bottom:6px;}
-.kpi-val{font-family:'Playfair Display',serif;font-size:32px;font-weight:900;line-height:1;margin-bottom:4px;}
+.kpi-val{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:900;line-height:1;margin-bottom:4px;}
 .kpi-sub{font-size:10px;color:var(--mid);font-weight:600;margin-bottom:7px;}
 .badge{display:inline-flex;align-items:center;gap:3px;font-size:9px;font-weight:800;padding:3px 10px;border-radius:20px;letter-spacing:0.04em;}
 .badge.p{background:var(--green-lt);color:var(--green);} .badge.n{background:var(--red-lt);color:var(--red);} .badge.w{background:#FFF8E0;color:#8A6000;}
@@ -126,13 +119,13 @@ main{padding:44px 48px 60px;max-width:1400px;margin:0 auto;}
 .opp-item{padding:22px 24px;background:var(--card);border-right:1px solid var(--border);}
 .opp-item:last-child{border-right:none;}
 .opp-lbl{font-size:8px;font-weight:800;letter-spacing:0.2em;text-transform:uppercase;color:var(--orange);margin-bottom:6px;}
-.opp-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--dark);margin-bottom:8px;line-height:1.3;}
+.opp-title{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:700;color:var(--dark);margin-bottom:8px;line-height:1.3;}
 .opp-body{font-size:11px;line-height:1.7;color:var(--mid);font-weight:600;}
 .opp-body strong{color:var(--dark);font-weight:800;}
 
 /* TABS */
 .tabs{display:flex;gap:4px;margin-bottom:12px;}
-.tab{padding:5px 15px;border-radius:30px;font-size:10px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border:1.5px solid var(--border);background:white;color:var(--mid);transition:all 0.12s;font-family:'Nunito',sans-serif;}
+.tab{padding:5px 15px;border-radius:30px;font-size:10px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border:1.5px solid var(--border);background:white;color:var(--mid);transition:all 0.12s;font-family:'Manrope',sans-serif;}
 .tab.on{background:var(--orange);border-color:var(--orange);color:white;}
 
 /* CARDS */
@@ -165,7 +158,7 @@ main{padding:44px 48px 60px;max-width:1400px;margin:0 auto;}
 }
 .mw-photo{width:110px;height:160px;border-radius:50%;flex-shrink:0;border:2px solid var(--orange);object-fit:cover;}
 .mw-lbl{font-size:8px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:var(--orange);margin-bottom:5px;}
-.mw-name{font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:white;margin-bottom:9px;line-height:1.1;}
+.mw-name{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:900;color:white;margin-bottom:9px;line-height:1.1;}
 .mw-name em{color:var(--orange2);font-style:italic;}
 .mw-body{font-size:11px;line-height:1.75;color:rgba(255,255,255,0.55);font-weight:600;}
 .mw-body strong{color:var(--orange2);font-weight:800;}
@@ -242,28 +235,19 @@ footer span{color:var(--orange);}
   <button class="tab on" onclick="sw15('vol',this)">Volume (units)</button>
   <button class="tab" onclick="sw15('val',this)">Value (£)</button>
 </div>
-<div class="card" style="margin-bottom:14px"><div class="h360"><canvas id="c15"></canvas></div></div>
+<div class="card" style="margin-bottom:22px"><div class="h360"><canvas id="c15"></canvas></div></div>
 
-<div class="g2">
-  <div class="card">
-    <div class="card-title">Volume by Price Band</div>
-    <div class="card-sub">Branded 750ml · orange = El Rico target</div>
-    <div class="tabs" id="segtabs">
-      <button class="tab on" onclick="swSeg('vol',this)">Volume</button>
-      <button class="tab" onclick="swSeg('val',this)">Value</button>
-    </div>
-    <div class="h300"><canvas id="cSeg"></canvas></div>
+
+<div class="card" style="margin-bottom:22px">
+  <div class="card-title">Rioja / Tempranillo — Top 10</div>
+  <div class="card-sub">Tempranillo-led brands · by volume</div>
+  <div class="tabs" id="rtabs">
+    <button class="tab on" onclick="swR('vol',this)">Volume</button>
+    <button class="tab" onclick="swR('val',this)">Value</button>
   </div>
-  <div class="card">
-    <div class="card-title">Rioja / Tempranillo — Top 10</div>
-    <div class="card-sub">Tempranillo-led brands · by volume</div>
-    <div class="tabs" id="rtabs">
-      <button class="tab on" onclick="swR('vol',this)">Volume</button>
-      <button class="tab" onclick="swR('val',this)">Value</button>
-    </div>
-    <div class="h300"><canvas id="cR"></canvas></div>
-  </div>
+  <div class="h360"><canvas id="cR"></canvas></div>
 </div>
+
 
 <div class="sec">
   <div class="sec-dot"></div><div class="sec-title">Rioja / Tempranillo Brand Rankings</div>
